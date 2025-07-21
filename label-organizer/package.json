@@ -1,6 +1,6 @@
 {
-  "name": "confluence-space-page-custom-ui",
-  "version": "1.1.12",
+  "name": "label-organizer",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -9,6 +9,7 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "dependencies": {
-    "@forge/resolver": "1.6.15"
+    "@forge/api": "^2.19.3",
+    "@forge/resolver": "^1.6.15"
   }
 }
