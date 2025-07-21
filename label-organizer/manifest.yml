@@ -1,0 +1,27 @@
+modules:
+  confluence:spacePage:
+    - key: label-organizer-hello-world
+      resource: main
+      resolver:
+        function: resolver
+      title: label-organizer
+      route: hello-world
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/label-organizer/build
+permissions:
+  scopes:
+    - read:confluence-content.summary
+    - write:confluence-content
+    - read:confluence-content.all
+    - manage:confluence-configuration
+
+app:
+  runtime:
+    name: nodejs22.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/a415113b-914f-4367-9cad-6a9c6b1770fb
