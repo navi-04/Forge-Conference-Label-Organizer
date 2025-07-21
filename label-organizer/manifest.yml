@@ -1,11 +1,11 @@
 modules:
   confluence:spacePage:
-    - key: label-organizer-hello-world
+    - key: label-organizer
       resource: main
       resolver:
         function: resolver
-      title: label-organizer
-      route: hello-world
+      title: Label Organizer
+      route: labels
   function:
     - key: resolver
       handler: index.handler
@@ -17,6 +17,9 @@ permissions:
     - read:confluence-content.summary
     - write:confluence-content
     - read:confluence-content.all
+    - read:confluence-space.summary
+    - read:confluence-props
+    - write:confluence-props
     - manage:confluence-configuration
 
 app:

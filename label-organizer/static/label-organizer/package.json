@@ -1,21 +1,23 @@
 {
-  "name": "confluence-space-page-custom-ui-static",
-  "version": "0.1.50",
+  "name": "label-organizer-ui",
+  "version": "1.0.0",
   "private": true,
-  "homepage": ".",
   "dependencies": {
-    "@atlaskit/css-reset": "^6.6.2",
-    "@forge/bridge": "5.2.0",
-    "react": "^16",
-    "react-dom": "^16"
-  },
-  "devDependencies": {
-    "react-scripts": "^5.0.1"
+    "@forge/bridge": "^2.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -28,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.0"
   }
 }
